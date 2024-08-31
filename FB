@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaceBook-Like Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+.header {
+            background-color: #4267B2;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+.header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+.header .search input {
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+        }
+.header .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+.main-container {
+            display: flex;
+            margin: 20px;
+            flex-direction: column;
+        }
+.profile {
+            width: 300px;
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+.profile img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+.profile h2 {
+            margin: 0 0 10px;
+        }
+.profile p {
+            color: #555;
+        }
+.feed {
+            flex: 1;
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+.feed .post {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            text-align: center;
+        }
+.feed .post img {
+            width: 80%; 
+            max-width: 600px; 
+            border-radius: 5px;
+            display: block; 
+            margin: 0 auto; 
+        }
+.feed .post .content {
+            margin-top: 10px;
+        }
+.feed .post .content .username {
+            font-weight: bold;
+        }
+.feed .post .content .text {
+            margin-top: 5px;
+        }
+.feed .post .actions {
+            display: flex;
+            gap: 15px; 
+            margin-top: 10px;
+            justify-content: center; 
+        }
+.feed .post .actions button {
+            background: none;
+            border: none;
+            color: #4267B2;
+            cursor: pointer;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            padding: 5px; 
+        }
+.feed .post .actions button i {
+            margin-right: 3px; 
+        }
+.feed .post .actions button:hover {
+            text-decoration: underline;
+        }
+.new-post {
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+.new-post textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+.new-post button {
+            background-color: #4267B2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+.new-post button:hover {
+            background-color: #365899;
+        }
+.post-tags {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            justify-content: center;
+        }
+.post-tags .tag {
+            background-color: #e9ebee;
+            border-radius: 15px;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">FaceBook</div>
+        <div class="search">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Messages</a>
+            <a href="#">Notifications</a>
+            <a href="#">Profile</a>
+        </div>
+    </header>
+<div class="main-container">
+        <div class="profile">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc_NEc8A16sOFBrLMoOcBUwFZlZ84A9UzfRw&s" alt="Profile Picture">
+            <h2>John Doe</h2>
+            <p>Software Developer at Example Co.</p>
+        </div>
+<div class="new-post">
+            <textarea placeholder="What's on your mind, John?"></textarea>
+            <button>Post</button>
+        </div>
+<div class="feed">
+            <div class="post">
+                <img src="https://media.istockphoto.com/id/841278554/photo/beautiful-morning-light-in-public-park-with-green-grass-field.jpg?s=612x612&w=0&k=20&c=rXOM3Uq9kPbpM5IWnCAnffHOP8KKpVKCJDMuNBlTNls=" alt="Post Image">
+                <div class="content">
+                    <div class="username">johndoe</div>
+                    <div class="text">Having a great day at the park!</div>
+                </div>
+                <div class="post-tags">
+                    <span class="tag">#park</span>
+                    <span class="tag">#nature</span>
+                </div>
+                <div class="actions">
+                    <button><i class="fas fa-thumbs-up"></i> Like</button>
+                    <button><i class="fas fa-comment"></i> Comment</button>
+                    <button><i class="fas fa-share"></i> Share</button>
+                </div>
+            </div>
+            <div class="post">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX1jTyB8YPnzcmWLn_yS5w6hSrbrhnaMTQMA&s" alt="Post Image">
+                <div class="content">
+                    <div class="username">janedoe</div>
+                    <div class="text">Just tried a new recipe, and it was amazing!</div>
+                </div>
+                <div class="post-tags">
+                    <span class="tag">#food</span>
+                    <span class="tag">#recipe</span>
+                </div>
+                <div class="actions">
+                    <button><i class="fas fa-thumbs-up"></i> Like</button>
+                    <button><i class="fas fa-comment"></i> Comment</button>
+                    <button><i class="fas fa-share"></i> Share</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
